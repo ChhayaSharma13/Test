@@ -6,12 +6,12 @@ import io.swagger.annotations.ApiModelProperty;
 import java.util.Date;
 
 @ApiModel(description = "Request object for POST method")
-public class originalURLRequest {
+public class OriginalURLRequest {
 
     @ApiModelProperty(required = true, notes = "Original URL")
     private String originalURL;
 
-    @ApiModelProperty(notes = "Expiration datetime of url")
+    @ApiModelProperty(notes = "D")
     private Date expireDate;
 
     public String getLongUrl() {

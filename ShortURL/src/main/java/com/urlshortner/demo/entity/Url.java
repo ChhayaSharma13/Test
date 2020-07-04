@@ -6,14 +6,19 @@ import java.util.Date;
 @Entity
 @Table(name = "url")
 public class Url {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
     @Column(nullable = false)
-    private String originalURL;
+    private String originalUrl;
+
     @Column(nullable = false)
-    private Date generateDate;
-    private Date expireDate;
+    private Date lastUpdated;
+
+    @Column(nullable = false)
+    private Date expires;
 
     public long getId() {
         return id;
@@ -21,22 +26,22 @@ public class Url {
     public void setId(long id) {
         this.id = id;
     }
-    public String getOriginalURL() {
-        return originalURL;
+    public String getOriginalUrl() {
+        return originalUrl;
     }
-    public void setOriginalURL(String originalURL) {
-        this.originalURL = originalURL;
+    public void setOriginalUrl(String originalUrl) {
+        this.originalUrl = originalUrl;
     }
-    public Date getGenerateDate() {
-        return generateDate;
+    public Date getLastUpdated() {
+        return lastUpdated;
     }
-    public void setGenerateDate(Date generateDate) {
-        this.generateDate = generateDate;
+    public void setLastUpdated(Date lastUpdated) {
+        this.lastUpdated = lastUpdated;
     }
-    public Date getExpireDate() {
-        return expireDate;
+    public Date getExpires() {
+        return expires;
     }
-    public void setExpiresDate(Date expireDate) {
-        this.expireDate = expireDate;
+    public void setExpires(Date expires) {
+        this.expires = expires;
     }
 }
