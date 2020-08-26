@@ -17,9 +17,6 @@ public class Url {
     @Column(nullable = false)
     private Date lastUpdated;
 
-    @Column(nullable = false)
-    private Date expires;
-
     public long getId() {
         return id;
     }
@@ -38,10 +35,5 @@ public class Url {
     public void setLastUpdated(Date lastUpdated) {
         this.lastUpdated = lastUpdated;
     }
-    public Date getExpires() {
-        return expires;
-    }
-    public void setExpires(Date expires) {
-        this.expires = expires;
-    }
+
 }

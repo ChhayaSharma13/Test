@@ -1,6 +1,6 @@
 package com.urlshortner.demo.service;
 
-import Exception.NotFoundException;
+import com.urlshortner.demo.exception.NotFoundException;
 import com.urlshortner.demo.entity.Url;
 import com.urlshortner.demo.repository.UrlRepository;
 import org.springframework.stereotype.Service;

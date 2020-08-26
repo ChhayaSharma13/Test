@@ -1,12 +1,9 @@
 package com.urlshortner.demo.controller;
 
-import Exception.ServerException;
-import Exception.UrlException;
+import com.urlshortner.demo.exception.*;
 import com.urlshortner.demo.entity.Url;
 import com.urlshortner.demo.service.UrlService;
-
 import org.apache.commons.validator.UrlValidator;
-//import org.apache.commons.validator.UrlValidator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
